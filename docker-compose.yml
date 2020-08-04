@@ -1,0 +1,18 @@
+version: "3.4
+services:
+  jupyter-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jupyter-base-image
+    command: supervisord --nodaemon --configuration service_script.conf
+    container_name: mak-jupyter-container
+    volumes:
+      - type: bind
+        source: $CURRENTPWD
+        target: /code/
+    ports:
+      - 17061:8888
+
+
+
