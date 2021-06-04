@@ -9,8 +9,8 @@ c.NotebookApp.ip = '*'
 c.NotebookApp.allow_remote_access = True
 c.NotebookApp.open_browser = False
 # ipython -c "from notebook.auth import passwd; passwd()"
-c.NotebookApp.password = 'sha1:79ceb4246cef:70851939521eca2961a3ed10168b8b4fd6833dae'
-c.NotebookApp.port = int(17061)
+c.NotebookApp.password =  'argon2:$argon2id$v=19$m=10240,t=10,p=8$vtM02Ja+JWO7M2Wyt6Pv9A$pwEKNjpf1Tpu5x04c8fCjw'
+c.NotebookApp.port = int(8888)
 c.NotebookApp.allow_root = True
 c.NotebookApp.allow_password_change = True
 c.ConfigurableHTTPProxy.command = ['configurable-http-proxy', '--redirect-port', '80']
