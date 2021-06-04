@@ -12,7 +12,7 @@ services:
         source: $CURRENTPWD
         target: /code/
     ports:
-      - 17061:17061
+      - 8888:8888
 
 
 
