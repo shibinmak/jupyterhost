@@ -13,6 +13,7 @@ services:
         target: /code/
     ports:
       - 17061:17061
+      - 17061:80
 
 
 
